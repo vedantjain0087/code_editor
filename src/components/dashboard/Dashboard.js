@@ -47,7 +47,7 @@ class Dashboard extends Component {
     this.setState({
       hide_loader :false
     })
-    axios.post('http://localhost:3001/get_code', {
+    axios.post('https://emailsystem.herokuapp.com/get_code', {
       script: this.state.starter,
       lang:this.state.dis_lang
     })
